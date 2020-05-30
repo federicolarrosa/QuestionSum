@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/leopard_aurora_wallpapers_8084_2560x1600">
+
+    <Button
+        android:id="@+id/LDM"
+        android:layout_width="275dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/background_boton"
+        android:text="Libro De Mormón"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/DYC"
+        android:layout_width="275dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_boton1"
+        android:text="Doctrinas y Convenios"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LDM" />
+
+    <Button
+        android:id="@+id/NT"
+        android:layout_width="275dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/background_boton2"
+        android:text="Nuevo Testamento"
+        android:textColor="@android:color/background_light"
+        android:textColorHighlight="@android:color/background_light"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DYC"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
