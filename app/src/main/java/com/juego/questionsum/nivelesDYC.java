@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class nivelesDYC<button> extends AppCompatActivity implements View.OnClickListener {
+public class nivelesDYC extends AppCompatActivity implements View.OnClickListener {
     Button btn_dyc_1, btn_dyc_2, btn_dyc_3, btn_dyc_4, btn_dyc_5, btn_dyc_6, btn_dyc_7, btn_dyc_8, btn_dyc_9, btn_dyc_10, btn_dyc_11, btn_dyc_12, btn_dyc_13, btn_dyc_14, btn_dyc_15, btn_dyc_16, btn_dyc_17, btn_dyc_18, btn_dyc_19, btn_dyc_20, btn_dyc_21, btn_dyc_22, btn_dyc_23, btn_dyc_24, btn_dyc_25, btn_dyc_26, btn_dyc_27, btn_dyc_28, btn_dyc_29, btn_dyc_30, btn_dyc_31, btn_dyc_32, btn_dyc_33, btn_dyc_34, btn_dyc_35, btn_dyc_36, btn_dyc_37, btn_dyc_38, btn_dyc_39, btn_dyc_40;
 
     @Override
