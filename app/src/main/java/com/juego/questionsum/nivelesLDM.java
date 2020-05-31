@@ -223,7 +223,7 @@ public class nivelesLDM extends AppCompatActivity implements View.OnClickListene
                 this.startActivity(intent28);
                 break;
 
-               //esto es solo para prueba borralo
+
 
 
 

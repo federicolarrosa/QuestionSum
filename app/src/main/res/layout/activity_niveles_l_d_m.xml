@@ -38,6 +38,7 @@
                         android:id="@+id/btn_ldm_1"
                         android:layout_width="72dp"
                         android:layout_height="52dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:background="@drawable/background_boton"
                         android:text="1"
@@ -50,6 +51,7 @@
                         android:layout_height="52dp"
                         android:layout_marginStart="13dp"
                         android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:background="@drawable/background_boton"
                         android:text="2"
@@ -62,6 +64,7 @@
                         android:layout_height="52dp"
                         android:layout_marginStart="13dp"
                         android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:background="@drawable/background_boton"
                         android:text="3"
@@ -74,6 +77,7 @@
                         android:layout_height="52dp"
                         android:layout_marginStart="13dp"
                         android:layout_marginLeft="13dp"
+                        android:layout_marginTop="8dp"
                         android:layout_marginBottom="4dp"
                         android:background="@drawable/background_boton"
                         android:text="4"
@@ -485,6 +489,117 @@
                         android:textColor="@android:color/background_light"
                         android:textSize="24sp" />
 
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_ldm_33"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="33"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_34"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="34"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_35"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="35"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_36"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="36"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_ldm_37"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="37"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_38"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="38"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_39"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="39"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/btn_ldm_40"
+                        android:layout_width="72dp"
+                        android:layout_height="52dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/background_boton"
+                        android:text="40"
+                        android:textColor="@android:color/background_light"
+                        android:textSize="24sp" />
                 </TableRow>
             </TableLayout>
         </LinearLayout>
