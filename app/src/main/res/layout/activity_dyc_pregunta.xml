@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".dycPregunta">
+    android:background="@drawable/leopard_aurora_wallpapers_8084_2560x1600"
+    tools:context=".ntPregunta">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
