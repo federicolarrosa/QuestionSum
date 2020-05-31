@@ -8,7 +8,12 @@ import android.view.View;
 import android.widget.Button;
 
 public class nivelesLDM extends AppCompatActivity implements View.OnClickListener {
-    Button btn_ldm_1, btn_ldm_2, btn_ldm_3, btn_ldm_4, btn_ldm_5, btn_ldm_6, btn_ldm_7, btn_ldm_8, btn_ldm_9, btn_ldm_10, btn_ldm_11, btn_ldm_12, btn_ldm_13, btn_ldm_14, btn_ldm_15, btn_ldm_16, btn_ldm_17, btn_ldm_18, btn_ldm_19, btn_ldm_20, btn_ldm_21, btn_ldm_22, btn_ldm_23, btn_ldm_24, btn_ldm_25, btn_ldm_26, btn_ldm_27, btn_ldm_28, btn_ldm_29, btn_ldm_30, btn_ldm_31, btn_ldm_32, btn_ldm_33, btn_ldm_34, btn_ldm_35, btn_ldm_36, btn_ldm_37, btn_ldm_38, btn_ldm_39, btn_ldm_40;
+    Button btn_ldm_1, btn_ldm_2, btn_ldm_3, btn_ldm_4, btn_ldm_5, btn_ldm_6, btn_ldm_7, btn_ldm_8;
+    Button btn_ldm_9, btn_ldm_10, btn_ldm_11, btn_ldm_12, btn_ldm_13, btn_ldm_14, btn_ldm_15;
+    Button btn_ldm_16, btn_ldm_17, btn_ldm_18, btn_ldm_19, btn_ldm_20, btn_ldm_21, btn_ldm_22;
+    Button btn_ldm_23, btn_ldm_24, btn_ldm_25, btn_ldm_26, btn_ldm_27, btn_ldm_28, btn_ldm_29;
+    Button btn_ldm_30, btn_ldm_31, btn_ldm_32, btn_ldm_33, btn_ldm_34, btn_ldm_35, btn_ldm_36;
+    Button btn_ldm_37, btn_ldm_38, btn_ldm_39, btn_ldm_40;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,7 +48,18 @@ public class nivelesLDM extends AppCompatActivity implements View.OnClickListene
         btn_ldm_26 = findViewById(R.id.btn_ldm_26);
         btn_ldm_27 = findViewById(R.id.btn_ldm_27);
         btn_ldm_28 = findViewById(R.id.btn_ldm_28);
-
+        btn_ldm_29 = findViewById(R.id.btn_ldm_29);
+        btn_ldm_30 = findViewById(R.id.btn_ldm_30);
+        btn_ldm_31 = findViewById(R.id.btn_ldm_31);
+        btn_ldm_32 = findViewById(R.id.btn_ldm_32);
+        btn_ldm_33 = findViewById(R.id.btn_ldm_33);
+        btn_ldm_34 = findViewById(R.id.btn_ldm_34);
+        btn_ldm_35 = findViewById(R.id.btn_ldm_35);
+        btn_ldm_36 = findViewById(R.id.btn_ldm_36);
+        btn_ldm_37 = findViewById(R.id.btn_ldm_37);
+        btn_ldm_38 = findViewById(R.id.btn_ldm_38);
+        btn_ldm_39 = findViewById(R.id.btn_ldm_39);
+        btn_ldm_40 = findViewById(R.id.btn_ldm_40);
 
         btn_ldm_1.setOnClickListener(this);
         btn_ldm_2.setOnClickListener(this);
@@ -73,9 +89,18 @@ public class nivelesLDM extends AppCompatActivity implements View.OnClickListene
         btn_ldm_26.setOnClickListener(this);
         btn_ldm_27.setOnClickListener(this);
         btn_ldm_28.setOnClickListener(this);
-
-
-
+        btn_ldm_29.setOnClickListener(this);
+        btn_ldm_30.setOnClickListener(this);
+        btn_ldm_31.setOnClickListener(this);
+        btn_ldm_32.setOnClickListener(this);
+        btn_ldm_33.setOnClickListener(this);
+        btn_ldm_34.setOnClickListener(this);
+        btn_ldm_35.setOnClickListener(this);
+        btn_ldm_36.setOnClickListener(this);
+        btn_ldm_37.setOnClickListener(this);
+        btn_ldm_38.setOnClickListener(this);
+        btn_ldm_39.setOnClickListener(this);
+        btn_ldm_40.setOnClickListener(this);
     }
 
     @Override
@@ -222,6 +247,68 @@ public class nivelesLDM extends AppCompatActivity implements View.OnClickListene
                 intent28.putExtra("id", btn_ldm_28.getText().toString());
                 this.startActivity(intent28);
                 break;
+            case R.id.btn_ldm_29:
+                Intent intent29 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent29.putExtra("id", btn_ldm_29.getText().toString());
+                this.startActivity(intent29);
+                break;
+            case R.id.btn_ldm_30:
+                Intent intent30 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent30.putExtra("id", btn_ldm_30.getText().toString());
+                this.startActivity(intent30);
+                break;
+            case R.id.btn_ldm_31:
+                Intent intent31 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent31.putExtra("id", btn_ldm_31.getText().toString());
+                this.startActivity(intent31);
+                break;
+            case R.id.btn_ldm_32:
+                Intent intent32 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent32.putExtra("id", btn_ldm_32.getText().toString());
+                this.startActivity(intent32);
+                break;
+            case R.id.btn_ldm_33:
+                Intent intent33 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent33.putExtra("id", btn_ldm_33.getText().toString());
+                this.startActivity(intent33);
+                break;
+            case R.id.btn_ldm_34:
+                Intent intent34 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent34.putExtra("id", btn_ldm_34.getText().toString());
+                this.startActivity(intent34);
+                break;
+            case R.id.btn_ldm_35:
+                Intent intent35 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent35.putExtra("id", btn_ldm_35.getText().toString());
+                this.startActivity(intent35);
+                break;
+            case R.id.btn_ldm_36:
+                Intent intent36 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent36.putExtra("id", btn_ldm_36.getText().toString());
+                this.startActivity(intent36);
+                break;
+            case R.id.btn_ldm_37:
+                Intent intent37 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent37.putExtra("id", btn_ldm_37.getText().toString());
+                this.startActivity(intent37);
+                break;
+            case R.id.btn_ldm_38:
+                Intent intent38 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent38.putExtra("id", btn_ldm_38.getText().toString());
+                this.startActivity(intent38);
+                break;
+            case R.id.btn_ldm_39:
+                Intent intent39 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent39.putExtra("id", btn_ldm_39.getText().toString());
+                this.startActivity(intent39);
+                break;
+            case R.id.btn_ldm_40:
+                Intent intent40 = new Intent(nivelesLDM.this, ntPregunta.class);
+                intent40.putExtra("id", btn_ldm_40.getText().toString());
+                this.startActivity(intent40);
+                break;
+
+
 
 
 

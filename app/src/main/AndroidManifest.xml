@@ -10,20 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".ntPregunta"
+        <activity android:name=".dycPregunta"></activity>
+        <activity android:name=".ldmPregunta" />
+        <activity
+            android:name=".ntPregunta"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
-        <activity android:name=".nivelesNT"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".nivelesNT"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
-        <activity android:name=".nivelesDYC"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".nivelesDYC"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
-        <activity android:name=".nivelesLDM"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".nivelesLDM"
             android:screenOrientation="portrait"
-            tools:ignore="LockedOrientationActivity"/>
-        <activity android:name=".MainActivity"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
             android:screenOrientation="portrait"
             tools:ignore="LockedOrientationActivity">
             <intent-filter>
