@@ -8,7 +8,11 @@ import android.view.View;
 import android.widget.Button;
 
 public class nivelesNT extends AppCompatActivity implements View.OnClickListener {
- Button  btn_nt_1,btn_nt_2,btn_nt_3,btn_nt_4,btn_nt_5,btn_nt_6,btn_nt_7,btn_nt_8,btn_nt_9,btn_nt_10,btn_nt_11,btn_nt_12,btn_nt_13,btn_nt_14,btn_nt_15,btn_nt_16,btn_nt_17,btn_nt_18,btn_nt_19,btn_nt_20,btn_nt_21,btn_nt_22,btn_nt_23,btn_nt_24,btn_nt_25,btn_nt_26,btn_nt_27,btn_nt_28,btn_nt_29,btn_nt_30,btn_nt_31,btn_nt_32,btn_nt_33,btn_nt_34,btn_nt_35,btn_nt_36,btn_nt_37,btn_nt_38,btn_nt_39,btn_nt_40;
+ Button  btn_nt_1,btn_nt_2,btn_nt_3,btn_nt_4,btn_nt_5,btn_nt_6,btn_nt_7,btn_nt_8,btn_nt_9,btn_nt_10;
+ Button btn_nt_11,btn_nt_12,btn_nt_13,btn_nt_14,btn_nt_15,btn_nt_16,btn_nt_17,btn_nt_18,btn_nt_19;
+ Button btn_nt_20,btn_nt_21,btn_nt_22,btn_nt_23,btn_nt_24,btn_nt_25,btn_nt_26,btn_nt_27,btn_nt_28;
+ Button btn_nt_29,btn_nt_30,btn_nt_31,btn_nt_32,btn_nt_33,btn_nt_34,btn_nt_35,btn_nt_36;
+ Button btn_nt_37,btn_nt_38,btn_nt_39,btn_nt_40;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
