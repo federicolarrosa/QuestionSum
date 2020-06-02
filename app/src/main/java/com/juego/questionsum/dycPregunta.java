@@ -47,6 +47,7 @@ public class dycPregunta extends AppCompatActivity {
                 txtpregunta.setText(preguntas.get(0));
                 int pos =0;
                 if (pos==0){
+                    
                     rp1.setText("Jose Smith");
                     rp2.setText("Brigham Young");
                     rp3.setText("Joseph Fielding Smith");
