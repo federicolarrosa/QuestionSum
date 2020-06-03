@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".dycPregunta"></activity>
+        <activity android:name=".cargaPreguntas"></activity>
+        <activity android:name=".dycPregunta" />
         <activity android:name=".ldmPregunta" />
         <activity
             android:name=".ntPregunta"
