@@ -17,7 +17,7 @@ public class ldmPregunta extends AppCompatActivity {
     RadioButton rp1,rp2,rp3,rp4;
     ProgressBar progressBar;
     ArrayList<String>Preguntas;
-    String id;
+    String id,Categoria;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +31,7 @@ public class ldmPregunta extends AppCompatActivity {
         rp4=findViewById(R.id.rp4);
 
         Preguntas=new ArrayList<>();
-
+        Categoria=getIntent().getStringExtra("Categoria");
 
     }
 }

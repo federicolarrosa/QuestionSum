@@ -1,5 +1,6 @@
 package com.juego.questionsum;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -11,6 +12,12 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
 import java.util.ArrayList;
 
 public class dycPregunta extends AppCompatActivity {
@@ -18,10 +25,11 @@ public class dycPregunta extends AppCompatActivity {
         RadioGroup radioGroup;
         RadioButton rp1, rp2, rp3, rp4;
         ProgressBar progressBar;
-        String id,V,F,ver="";
+        String id,Categoria,V,F,ver="";
         Boolean verdadero = true;
         int pos = 0;
         ArrayList<String> preguntas = new ArrayList<>();
+        DatabaseReference myRef;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,12 +48,23 @@ public class dycPregunta extends AppCompatActivity {
         progressBar.setMax(100);
         V = "Correcto";
         F = "Incorrecto";
-
-
+        Categoria=getIntent().getStringExtra("Categoria");
         id = getIntent().getStringExtra("id");
-        preguntas.add("¿Como se llama el profeta de la restauración?");
-        preguntas.add("¿Cuantas veces se le aparecio el angel Moroni a Jose Smith?");
-        preguntas.add("¿Cuantos hermanos tuvo nefi?");
+        myRef= FirebaseDatabase.getInstance().getReference().child("PreguntasRes").child(Categoria).child(id);
+        myRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
+
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
         switch (id) {
             case "1":
                 level.setText(id);

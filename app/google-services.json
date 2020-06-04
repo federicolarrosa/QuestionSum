@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "333337838418",
+    "firebase_url": "https://questionsum.firebaseio.com",
+    "project_id": "questionsum",
+    "storage_bucket": "questionsum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:333337838418:android:fb66d0109a633f1293708b",
+        "android_client_info": {
+          "package_name": "com.juego.questionsum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "333337838418-nn2hahs11h4mcs6mnqvm7ta96iqdfdeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_uXBi_reaiWRdkf6YCZr31lEMcitozFE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "333337838418-nn2hahs11h4mcs6mnqvm7ta96iqdfdeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

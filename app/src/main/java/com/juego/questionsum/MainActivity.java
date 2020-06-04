@@ -29,7 +29,9 @@ public class MainActivity extends AppCompatActivity {
         LDM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,nivelesLDM.class));
+                Intent intent = new Intent(MainActivity.this, nivelesLDM.class);
+                intent.putExtra("Categoria", LDM.getText().toString());
+                startActivity(intent);
             }
         });
 
@@ -37,14 +39,18 @@ public class MainActivity extends AppCompatActivity {
         DYC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,nivelesDYC.class));
+                Intent intent = new Intent(MainActivity.this, nivelesDYC.class);
+                intent.putExtra("Categoria", DYC.getText().toString());
+                startActivity(intent);
             }
         });
 
         NT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity (new Intent(MainActivity.this,nivelesNT.class));
+                Intent intent = new Intent(MainActivity.this, nivelesNT.class);
+                intent.putExtra("Categoria", NT.getText().toString());
+                startActivity(intent);
             }
         });
 
