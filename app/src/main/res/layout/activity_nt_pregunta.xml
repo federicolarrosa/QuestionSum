@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/leopard_aurora_wallpapers_8084_2560x1600"
+    android:background="@drawable/angel_moroni"
     tools:context=".ntPregunta">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
