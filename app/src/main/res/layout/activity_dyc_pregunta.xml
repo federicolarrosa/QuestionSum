@@ -18,7 +18,7 @@
         android:layout_marginRight="32dp"
         android:background="#29FFFFFF"
         android:text="pregunta"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -48,7 +48,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 1"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 2"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -66,7 +66,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 3"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
 
         <RadioButton
@@ -74,7 +74,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Respuesta 4"
-            android:textColor="@android:color/background_light"
+            android:textColor="@android:color/black"
             android:textSize="18sp" />
     </RadioGroup>
 

@@ -27,7 +27,7 @@
                 android:layout_marginRight="32dp"
                 android:text="Registra tus preguntas para cada nivel"
                 android:textAllCaps="false"
-                android:textColor="#FFFFFF"
+                android:textColor="#000000"
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
@@ -43,8 +43,8 @@
                 android:ems="10"
                 android:hint="Ingresa la pregunta"
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF"
+                android:textColor="#000000"
+                android:textColorHint="#000000"
                 android:textStyle="bold" />
 
             <EditText
@@ -60,7 +60,7 @@
                 android:hint="Ingresa la respuesta correcta"
                 android:inputType="textPersonName"
                 android:textColor="#558B2F"
-                android:textColorHint="#4BE453" />
+                android:textColorHint="#6FF376" />
 
             <EditText
                 android:id="@+id/txtRP1"
@@ -74,8 +74,8 @@
                 android:ems="10"
                 android:hint="Ingrese la segunda respuesta"
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#F4F4F4" />
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <EditText
                 android:id="@+id/txtRP2"
@@ -89,8 +89,8 @@
                 android:ems="10"
                 android:hint="Ingresa la tercera respuesta "
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <EditText
                 android:id="@+id/txtRP3"
@@ -104,8 +104,8 @@
                 android:ems="10"
                 android:hint="Ingresa la cuarta respuesta"
                 android:inputType="textPersonName"
-                android:textColor="#FFFFFF"
-                android:textColorHint="#FFFFFF" />
+                android:textColor="#000000"
+                android:textColorHint="#000000" />
 
             <Spinner
                 android:id="@+id/spinnerLibro"

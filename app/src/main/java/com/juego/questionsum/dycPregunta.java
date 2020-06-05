@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.FrameLayout;
@@ -25,7 +26,7 @@ public class dycPregunta extends AppCompatActivity {
         RadioGroup radioGroup;
         RadioButton rp1, rp2, rp3, rp4;
         ProgressBar progressBar;
-        String id,Categoria,V,F,ver="";
+        String id,Categoria,V,F,ver="",key,pregunta,Rpv,Rp1,Rp2,Rp3;
         Boolean verdadero = true;
         int pos = 0;
         ArrayList<String> preguntas = new ArrayList<>();
@@ -50,14 +51,22 @@ public class dycPregunta extends AppCompatActivity {
         F = "Incorrecto";
         Categoria=getIntent().getStringExtra("Categoria");
         id = getIntent().getStringExtra("id");
+        Log.d("pregunta",Categoria);
+        Log.d("pre",id);
         myRef= FirebaseDatabase.getInstance().getReference().child("PreguntasRes").child(Categoria).child(id);
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()){
-
-
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                    key=dataSnapshot1.getKey();
+                    pregunta=dataSnapshot1.child("Pregunta").getValue().toString();
+                    Rpv=dataSnapshot1.child("RespuestaV").getValue().toString();
+                    Rp1=dataSnapshot1.child("Respuesta1").getValue().toString();
+                    Rp2=dataSnapshot1.child("Respuesta2").getValue().toString();
+                    Rp3=dataSnapshot1.child("Respuesta3").getValue().toString();
+                    Log.d("pregunta",dataSnapshot1.child("Pregunta").getValue().toString());
                 }
+
             }
 
             @Override
@@ -65,6 +74,7 @@ public class dycPregunta extends AppCompatActivity {
 
             }
         });
+
         switch (id) {
             case "1":
                 level.setText(id);
@@ -75,16 +85,26 @@ public class dycPregunta extends AppCompatActivity {
 
                     switch (pos) {
                         case 0:
-                            txtpregunta.setText(preguntas.get(0));
-                            rp1.setText("Jose Smith");
-                            rp2.setText("Brigham Young");
-                            rp3.setText("Joseph Fielding Smith");
-                            rp4.setText("Gordon B. Hinckley");
-                            ver = "rp1";
+                            txtpregunta.setText(pregunta);
+
+                            Random(Rp1,Rp2,Rp3,Rpv);
+                            rp1.setText(Rpv);
+                            rp2.setText(Rp1);
+                            rp3.setText(Rp2);
+                            rp4.setText(Rp3);
+                            if (rp1.equals(Rpv)){
+                                ver = "rp1";
+                            }else if (rp2.equals(Rpv)){
+                                ver="rp2";
+                            }else if (rp3.equals(Rpv))
+                                ver="rp3";
+                            else if (rp4.equals(Rpv)){
+                                ver="rp4";
+                            }
                             verdadero = true;
                             break;
                         case 1:
-                            txtpregunta.setText(preguntas.get(1));
+                            txtpregunta.setText(pregunta);
                             rp1.setText("2 veces");
                             rp2.setText("6 veces");
                             rp3.setText("4 veces");
@@ -93,7 +113,7 @@ public class dycPregunta extends AppCompatActivity {
                             verdadero = true;
                             break;
                         case 2:
-                            txtpregunta.setText(preguntas.get(2));
+                            txtpregunta.setText(pregunta);
                             rp1.setText("2 Hermanos");
                             rp2.setText("6 Hermanos");
                             rp3.setText("4 Hermanos");
@@ -209,10 +229,31 @@ public class dycPregunta extends AppCompatActivity {
                 break;
                 }
             case "2":
-                level.setText(id);
-                txtpregunta.setText(preguntas.get(1));
+
                 break;
         }
 
+    }
+
+    private void Random(String R1, String R2, String R3, String RV){
+
+        for (int i=0;i<10;i++){
+            String rp1 = R2;
+            String rp2 = R3;
+            String rp3 = RV;
+            String rp4 = R1;
+
+            String r1=rp2;
+            String r2=rp4;
+            String r3=rp1;
+            String r4=rp3;
+
+            R1=r1;
+            R2=r2;
+            R3=r3;
+            RV=r4;
+
+
+        }
     }
 }

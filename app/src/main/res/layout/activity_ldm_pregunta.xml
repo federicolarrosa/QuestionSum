@@ -37,7 +37,7 @@
         android:layout_marginRight="32dp"
         android:background="#28FFFFFF"
         android:text="Preguntas "
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -68,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 1"
-            android:textColor="#FFFFFF" />
+            android:textColor="#000000" />
 
         <RadioButton
             android:id="@+id/rp2"
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 2"
-            android:textColor="#FFFFFF" />
+            android:textColor="#000000" />
 
         <RadioButton
             android:id="@+id/rp3"
@@ -84,14 +84,14 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="Respuesta 3"
-            android:textColor="#FFFFFF" />
+            android:textColor="#000000" />
 
         <RadioButton
             android:id="@+id/rp4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Respuesta 4"
-            android:textColor="#FFFFFF" />
+            android:textColor="#000000" />
     </RadioGroup>
 
     <ProgressBar
